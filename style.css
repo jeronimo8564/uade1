@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+
+
+*{
+  margin: 0%;
+  box-sizing: border-box;
+  padding: 0%;
+  font-family: 'Asap', sans-serif;
+}
+
+body{
+background: linear-gradient(0deg, rgba(141, 59, 0, 0.29), rgba(141, 59, 0, 0.29)), rgba(53, 74, 74, 0.8);
+
+min-height: 100vh;
+}
+
+.nav-bar{
+position: relative;
+min-width: 100%;
+height: 3rem;
+background: #475657;
+display: flex;
+align-items: center;
+justify-content: center;
+padding:5px 10% ;
+}
+
+ul{
+  list-style: none;
+  
+}
+
+
+
+li  { 
+  display: inline-block;
+  padding: 0 0px 0px 40px;
+  font-size: 1.5rem;
+}
+
+a{
+  text-decoration: none;
+  color:#C6C5B9 ;
+}
+
+a:hover{
+  cursor: pointer;
+  color: white;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  min-height: 88vh;
+  font-size: 1.8rem;
+  color:#C6C5B9;}
+
+.imagen-curriculum{
+  min-width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imagen-curriculum:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+.barra-inferior{
+    width: 100%;
+    height: 7vh;
+    position: relative;
+    z-index: -1;
+background-color: #475657;
+}
+
+#texto-footer{
+    
+  padding-top: 2.5vh;
+  padding-left:1vh ;
+
+  color: #C6C5B9;
+
+    
+}
+
+img{
+    height:50vh;
+    border-radius: 100%;
+    border: #475657 1vh solid;
+    margin-left: 30px;
+}
+
+
+#conocimientos{
+    padding: 50px;
+    margin-left: 5% ;
+}
+input {                       
+    display: none;     
+  }
+  label {                       
+      display:none;
+  }
+
+@media ( max-width: 768px ){
+       main{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        justify-content: center;
+        align-items: center;
+        
+       }
+    .nav-bar{
+        height: 4rem;
+    }
+
+       img{
+        margin-top: 15px;
+        position: relative;
+        display:block;
+        justify-content:center;
+        align-items:center;
+        right: 8% ;
+       }
+
+       input:checked  ~ ul{   
+        display:block;
+          }
+      
+          input:checked ~ label {    label 
+          background: lightgrey; 
+              }
+      
+          label:hover{               
+          background: grey;
+          }
+      
+        li{                         
+             margin: 0px;
+             text-align: left;}
+    
+       label {                      
+        display: block;
+        border: 1px solid #242c00;
+        justify-content: left;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        background-color: #475657;
+   
+         }
+         ul li a{
+            text-decoration: none;
+            font-size: 1rem;
+            color: black;
+            background-color:#475657;
+          }
+          ul li a:hover{
+            color: #3B341F;
+          }
+    
+  ul{                          
+    display: none;
+    background-color:#475657;;
+
+   }
+}
